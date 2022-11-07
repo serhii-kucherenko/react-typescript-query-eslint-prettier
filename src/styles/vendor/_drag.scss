@@ -1,0 +1,26 @@
+.ant-upload.ant-upload-drag {
+    border-radius: 6px;
+    transition: var(--general-transition);
+
+    &:not(.ant-upload-disabled) {
+
+        &:hover {
+            border-color: color(primary-color);
+        }
+    }
+
+    p.ant-upload-drag-icon {
+        .anticon {
+            color: color(primary-color);
+        }
+    }
+
+    .ant-upload-btn {
+        padding: 24px;
+    }
+
+    p.ant-upload-text {
+        @include h5;
+        color: color(default-text-color);
+    }
+}

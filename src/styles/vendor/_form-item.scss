@@ -1,0 +1,13 @@
+
+.ant-form-item {
+    margin-bottom: 0;
+
+    .ant-form-item-label {
+        @include base-text;
+        padding-bottom: 6px;
+
+        label {
+            color: color(default-text-color);
+        }
+    }
+}

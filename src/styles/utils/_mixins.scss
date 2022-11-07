@@ -1,0 +1,83 @@
+@mixin position($position, $top: null, $left: null, $right: null, $bottom: null) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin sameInset($position, $value) {
+    position: $position;
+    top: $value;
+    left: $value;
+    right: $value;
+    bottom: $value;
+}
+
+@mixin line-clamp($lines) {
+    display: -webkit-box;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+}
+
+@mixin text-overflow {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin break-word {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin base-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin base-text-2 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+@mixin h3 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+@mixin h4 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+@mixin h5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+@mixin label-1 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+@mixin label-2 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}

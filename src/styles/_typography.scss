@@ -1,0 +1,57 @@
+h1,h2,h3,h4,h5,h6,p,span {
+    font-family: 'Roboto', sans-serif;
+    color: inherit;
+    margin: 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: color(default-title-color);
+}
+
+p,
+.base-text {
+    @include base-text;
+}
+
+.base-text-2 {
+    @include base-text-2;
+}
+
+h3,
+.heading-3 {
+    @include h3;
+}
+
+h4,
+.heading-4 {
+    @include h4;
+}
+
+h5,
+.heading-5 {
+    @include h5;
+}
+
+.label-1 {
+    @include label-1;
+}
+
+.label-2 {
+    @include label-2;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.centered {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right !important;
+}

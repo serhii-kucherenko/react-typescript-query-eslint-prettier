@@ -1,0 +1,9 @@
+@function color($color, $alpha: null) {
+
+    @if $alpha != null {
+        @return RGBA(var(--#{$color}), $alpha);
+    }
+    @else {
+        @return RGB(var(--#{$color}));
+    }
+}

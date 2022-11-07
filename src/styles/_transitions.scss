@@ -1,0 +1,84 @@
+/**************************/
+/* CSS Animations Classes */
+/**************************/
+
+/*
+The following class-endings: *-enter, *-enter-active, *-exit, *-exit-active,
+have very specific meanings to <CSSTransition />
+(see more: https://reactcommunity.org/react-transition-group/css-transition)
+*/
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+
+  transition: opacity 250ms ease-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+
+  transition: opacity 250ms ease-out;
+}
+
+.fadeIn {
+  animation: 0.4s fadeIn forwards;
+}
+
+.fadeOut {
+  animation: 0.4s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.fadeLeftIn {
+  animation: 0.3s fadeLeftIn forwards;
+}
+
+.fadeLeftOut {
+  animation: 0.3s fadeLeftOut forwards;
+}
+
+@keyframes fadeLeftIn {
+  from {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeLeftOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'sp-icons';
+    src: url('/assets/fonts/sp-icons/sp-icons.woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "sp-icons";
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+}
+
+.icon-arrow-down:before { content: '\e800'; }
+.icon-arrow-left:before { content: '\e801'; }
+.icon-arrow-right:before { content: '\e802'; }
+.icon-avatar:before { content: '\e803'; }
+.icon-check:before { content: '\e804'; }
+.icon-document:before { content: '\e805'; }
+.icon-edit:before { content: '\e806'; }
+.icon-lock:before { content: '\e807'; }
+.icon-team:before { content: '\e808'; }
+.icon-user:before { content: '\e809'; }
